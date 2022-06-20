@@ -36,7 +36,7 @@ const App = () => {
       {images.map((image, index) => {
         return (
         <div>
-        <PictureContainer number={index} url={image.download_url}/>
+        <PictureContainer profile={image.author} number={index} url={image.download_url}/>
         </div>
         );
       })}
