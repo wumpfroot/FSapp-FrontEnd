@@ -1,1 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* .imgBox {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 50vw;
+} */

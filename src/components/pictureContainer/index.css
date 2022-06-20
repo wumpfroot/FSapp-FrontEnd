@@ -1,0 +1,33 @@
+.imgBox {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    max-width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.photoContainer {
+    max-width: 100%;
+}
+
+.imgBox-top {
+    display: flex;
+    align-items: center;
+    max-width: 40vw;
+    border: 1px solid grey;
+}
+
+.profile-logo {
+    width: 50px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.three-dots {
+    width: 10px;
+    height: 10px;
+    margin-left: auto;
+    margin-right: 20px;
+}
