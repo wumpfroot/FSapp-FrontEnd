@@ -1,6 +1,6 @@
 # Full Stack - Front end
 
-Front end part of an full stack application. Mimics parts of Instagram
+Front end part of a full stack application. Mimics parts of Instagram
 
 
 # Getting Started with Create React App
