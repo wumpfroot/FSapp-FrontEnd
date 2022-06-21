@@ -2,35 +2,22 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import { PictureContainer } from './components/pictureContainer';
 import { InputForm } from './components/inputBox';
+import { LogOrSign } from './components/logOrSign';
+import { fetchImages } from './utils';
 
 const App = () => {
   const [images, setImages] = useState([]);
-  const fetchImageData = async () => {
-
-    try {
-      const response = await fetch("https://picsum.photos/v2/list");
-
-      if (!response.ok){
-        throw new Error(response.statusText);
-      }
-
-      const data = await response.json();
-      console.log(data);
-      setImages(data);
-
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  const [user, setUser] = useState();
 
   useEffect(() => {
-    fetchImageData()
-  }, [])
-
+    fetchImages(setImages);
+  }, []);
 
   return (
     <div className="App">
       <h1>Instagram</h1>
+      <h1>{user ? user : "LandingPage"}</h1>
+      <LogOrSign setter={setUser}/>
       <InputForm />
       <section className='content-container'>
       {images.map((image, index) => {
