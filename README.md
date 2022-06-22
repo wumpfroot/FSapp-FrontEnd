@@ -1,3 +1,8 @@
+# Full Stack - Front end
+
+Front end part of a full stack application. Mimics parts of Instagram
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
