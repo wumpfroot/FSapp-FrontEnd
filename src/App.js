@@ -1,4 +1,5 @@
 import './App.css';
+import { NavBar } from './components/navBar';
 import { useState, useEffect } from 'react';
 import { PictureContainer } from './components/pictureContainer';
 import { InputForm } from './components/inputBox';
@@ -15,14 +16,14 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1>Instagram</h1>
+      <NavBar />
       <h1>{user ? user : "LandingPage"}</h1>
       <LogOrSign setter={setUser}/>
       <InputForm />
       <section className='content-container'>
       {images.map((image, index) => {
         return (
-        <div>
+        <div className='image-box'>
         <PictureContainer profile={image.author} number={index} url={image.download_url}/>
         </div>
         );

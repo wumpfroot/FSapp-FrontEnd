@@ -1,0 +1,41 @@
+nav {
+    background-color: #ffff;
+    position: sticky;
+    top: 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.nav-logo {
+    width: 115px;
+}
+
+#searchBar {
+    position: relative;
+}
+
+.nav-input {
+    padding: 5px 35px;
+    min-width: 270px;
+    height: 36px;
+    border: 0;
+    border-radius: 8px;
+    background-color: #efefef;
+}
+
+.search-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 22px;
+}
